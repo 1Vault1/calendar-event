@@ -1,0 +1,21 @@
+@import "../../node_modules/materialize-css/sass/materialize";
+
+//@import "common/variables";
+//@import "common/reset";
+@import "common/normalize";
+//@import "common/include-media";
+@import "header";
+@import "calendar";
+@import "create-event";
+
+select {
+  display: block;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+

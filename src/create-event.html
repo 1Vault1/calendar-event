@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+</head>
+
+<body  id="createEventBody">
+
+<section id="error" class="error-section">
+    <div class="container">
+        <div class="text-holder">
+            <h2 class="title">Failed to create an event. Time slot is already booked</h2>
+        </div>
+    </div>
+</section>
+
+<section class="create-event-section">
+    <div class="container">
+        <div class="block-holder">
+            <p>Name of the event</p>
+            <input id="nameEvent" type="text">
+            <span id="emptyInput" class="emptyInput">Please, enter name of the event</span>
+        </div>
+
+        <div class="block-holder">
+            <p>Participants</p>
+
+            <select name="createUsers" id="createUsers" multiple>
+                <option value="maria">Maria</option>
+                <option value="sasha">Sasha</option>
+                <option value="kate">Kate</option>
+                <option value="victor">Victor</option>
+            </select>
+
+            <div class="results-holder">
+                <a id="addUser" class="btn" href="#">Add Participant</a>
+
+                <div class="results"></div>
+
+                <span id="emptySelect" class="emptySelect">Please, put name or names</span>
+            </div>
+        </div>
+
+        <div class="block-holder">
+            <p>Day</p>
+            <select name="days" id="days">
+                <option value="mon" selected>Monday</option>
+                <option value="tue">Tuesday</option>
+                <option value="wed">Wednesday</option>
+                <option value="thu">Thursday</option>
+                <option value="fri">Friday</option>
+            </select>
+        </div>
+
+        <div class="block-holder">
+            <p>Time</p>
+            <select name="time" id="time">
+                <option value="10" selected>10:00</option>
+                <option value="11">11:00</option>
+                <option value="12">12:00</option>
+                <option value="13">13:00</option>
+                <option value="14">14:00</option>
+                <option value="15">15:00</option>
+                <option value="16">16:00</option>
+                <option value="17">17:00</option>
+                <option value="18">18:00</option>
+            </select>
+        </div>
+
+        <div class="btn-holder">
+            <a id="cancel" class="btn" href="index.html">Cancel</a>
+            <a id="create" class="btn" href="#">Create</a>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

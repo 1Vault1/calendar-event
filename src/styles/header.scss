@@ -1,0 +1,39 @@
+.header {
+  .container {
+    padding: 30px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .title {
+    margin: 0;
+  }
+
+  .form {
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+    select,
+    .btn {
+      width: 100%;
+    }
+
+    select {
+      margin-right: 20px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .icon {
+      fill: #fff;
+      width: 14px;
+      height: 14px;
+    }
+  }
+}
